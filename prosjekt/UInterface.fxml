@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="380.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.diary.AppController">
+   <children>
+      <TextArea fx:id="out" editable="false" layoutX="268.0" layoutY="70.0" prefHeight="90.0" prefWidth="180.0" />
+      <TextField fx:id="date" layoutX="47.0" layoutY="58.0" promptText="dd.mm.yyyy" />
+      <TextField fx:id="sleep" layoutX="99.0" layoutY="102.0" promptText="from 0-10" />
+      <TextField fx:id="laugh" layoutX="99.0" layoutY="135.0" promptText="from 0-10" />
+      <TextField fx:id="stress" layoutX="99.0" layoutY="168.0" promptText="from 0-10" />
+      <Line endX="-70.20001220703125" endY="211.9000244140625" layoutX="545.0" layoutY="190.0" startX="-70.20001220703125" startY="-190.0" />
+      <Button fx:id="ent" layoutX="268.0" layoutY="168.0" mnemonicParsing="false" onAction="#onEnt" text="Enter and calculate" />
+      <TextArea fx:id="entry" editable="false" layoutX="499.0" layoutY="131.0" prefHeight="229.0" prefWidth="275.0" />
+      <TextField fx:id="search" layoutX="499.0" layoutY="89.0" promptText="dd.mm.yyyy" />
+      <Button fx:id="search_button" layoutX="663.0" layoutY="89.0" mnemonicParsing="false" onAction="#onSearch" text="Search" />
+      <TextField fx:id="text" alignment="TOP_LEFT" layoutX="47.0" layoutY="200.0" prefHeight="160.0" prefWidth="402.0" promptText="How was your day?" />
+      <Text layoutX="47.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" />
+      <Text layoutX="47.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sleep" />
+      <Text layoutX="48.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Laughter" />
+      <Text layoutX="47.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stress" />
+      <Text layoutX="499.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search for an entry" />
+   </children>
+</AnchorPane>
